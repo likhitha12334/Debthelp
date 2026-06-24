@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="/images/logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Debt Help Canada</title>
+
+  <meta
+    name="description"
+    content="Debt Help Canada - Find a debt solution that fits your financial situation."
+  />
+
+  <meta
+    name="keywords"
+    content="Debt Help, Debt Relief, Consumer Proposal, Bankruptcy, Loans"
+  />
+
+  <meta name="author" content="Debt Help" />
+
+  <!-- UTM Tracking -->
+  <script>
+    const params = new URLSearchParams(window.location.search);
+
+    localStorage.setItem(
+      "utm_source",
+      params.get("utm_source") || ""
+    );
+
+    localStorage.setItem(
+      "utm_medium",
+      params.get("utm_medium") || ""
+    );
+
+    localStorage.setItem(
+      "utm_campaign",
+      params.get("utm_campaign") || ""
+    );
+
+    localStorage.setItem(
+      "fbclid",
+      params.get("fbclid") || ""
+    );
+
+    /* Create debthelp.fblic cookie */
+
+    if (params.get("fbclid")) {
+      const cookieValue =
+        "fb.1." +
+        Date.now() +
+        "." +
+        params.get("fbclid");
+
+      document.cookie =
+        "debthelp.fblic=" +
+        cookieValue +
+        ";path=/;max-age=7776000";
+    }
+  </script>
+
+</head>
+
+<body>
+
+<div id="root"></div>
+
+<script type="module" src="/src/main.tsx"></script>
+
+</body>
+</html>

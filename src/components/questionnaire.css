@@ -1,0 +1,139 @@
+.questionnaire{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    margin:70px 0;
+
+}
+
+.question-card{
+
+    width:420px;
+
+    background:#fff;
+
+    border-radius:20px;
+
+    padding:40px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.1);
+
+}
+
+.step{
+
+    color:#2E63F4;
+
+    font-weight:700;
+
+    font-size:15px;
+
+}
+
+.question-card h2{
+
+    margin:20px 0 30px;
+
+    color:#173B82;
+
+    font-size:28px;
+
+}
+
+.options{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+.option{
+
+    border:2px solid #ddd;
+
+    padding:18px;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    font-size:17px;
+
+}
+
+.option input{
+
+    margin-right:15px;
+
+}
+
+.option:hover{
+
+    border-color:#2E63F4;
+
+}
+
+.option.active{
+
+    background:#EEF4FF;
+
+    border-color:#2E63F4;
+
+}
+
+.continue-btn{
+
+    width:100%;
+
+    margin-top:35px;
+
+    background:#2E63F4;
+
+    color:#fff;
+
+    border:none;
+
+    padding:16px;
+
+    border-radius:40px;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.continue-btn:hover{
+
+    background:#1849d6;
+
+}
+
+@media(max-width:768px){
+
+.question-card{
+
+    width:90%;
+
+    padding:25px;
+
+}
+
+.question-card h2{
+
+    font-size:22px;
+
+}
+
+}
