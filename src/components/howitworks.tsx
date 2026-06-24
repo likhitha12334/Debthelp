@@ -1,5 +1,5 @@
 
-import "./HowItWorks.css";
+import "./howitworks.css";
 
 const HowItWorks = () => {
   return (
