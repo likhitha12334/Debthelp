@@ -1,8 +1,12 @@
 
+import Questionnaire from "./questionnaire";
+
 const Hero = () => {
   return (
-    <section className="mx-auto flex max-w-7xl flex-col gap-12 px-6 py-16">
-      <div className="space-y-8 lg:max-w-xl">
+    <section className="mx-auto flex max-w-7xl flex-col lg:flex-row items-start gap-16 px-6 py-16">
+
+      {/* Left Side */}
+      <div className="flex-1 space-y-8">
         <div className="inline-flex items-center gap-3 rounded-full bg-sky-100 px-4 py-2 text-sm font-semibold text-sky-700">
           ⭐ Canada's Trusted Debt Relief Experts
         </div>
@@ -21,23 +25,29 @@ const Hero = () => {
         </div>
 
         <div className="grid gap-4 sm:grid-cols-3">
-          <div className="rounded-3xl border border-slate-200 bg-white/90 px-5 py-4 text-sm font-semibold text-slate-800 shadow-sm">
+          <div className="rounded-3xl border border-slate-200 bg-white px-5 py-4 text-sm font-semibold shadow-sm">
             ✔ Free Consultation
           </div>
 
-          <div className="rounded-3xl border border-slate-200 bg-white/90 px-5 py-4 text-sm font-semibold text-slate-800 shadow-sm">
+          <div className="rounded-3xl border border-slate-200 bg-white px-5 py-4 text-sm font-semibold shadow-sm">
             ✔ No Upfront Fees
           </div>
 
-          <div className="rounded-3xl border border-slate-200 bg-white/90 px-5 py-4 text-sm font-semibold text-slate-800 shadow-sm">
+          <div className="rounded-3xl border border-slate-200 bg-white px-5 py-4 text-sm font-semibold shadow-sm">
             ✔ Confidential Process
           </div>
         </div>
 
-        <button className="inline-flex items-center justify-center rounded-full bg-slate-950 px-8 py-4 text-base font-semibold text-white shadow-lg transition hover:bg-slate-800">
+        <button className="rounded-full bg-slate-950 px-8 py-4 text-white font-semibold hover:bg-slate-800">
           Find My Solution
         </button>
       </div>
+
+      {/* Right Side */}
+      <div className="w-full lg:w-[480px] flex-shrink-0">
+        <Questionnaire />
+      </div>
+
     </section>
   );
 };
