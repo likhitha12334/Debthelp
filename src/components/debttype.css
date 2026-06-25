@@ -26,25 +26,44 @@
 .debt-card{
     background:#fff;
     border-radius:20px;
-    overflow:hidden;
     box-shadow:0 10px 25px rgba(0,0,0,.08);
     transition:.3s;
     text-align:center;
+    padding:40px 24px 30px;
 }
 
 .debt-card:hover{
     transform:translateY(-10px);
 }
 
-.debt-image{
-    width:100%;
-    height:220px;
-    object-fit:cover;
+.debt-icon-wrapper{
+    width:100px;
+    height:100px;
+    margin:0 auto 24px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:999px;
+    background: linear-gradient(135deg, #EEF4FF, #DDE9FF);
+}
+
+.debt-icon{
+    width:44px;
+    height:44px;
+    color:#2E63F4;
 }
 
 .debt-card h3{
-    margin:20px 0;
+    margin:0;
     color:#163B82;
+    font-size:22px;
+}
+
+.debt-text{
+    color:#5B6B8E;
+    font-size:15px;
+    line-height:1.75;
+    margin:16px 0 26px;
 }
 
 .debt-btn{

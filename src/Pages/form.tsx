@@ -5,6 +5,7 @@ import "./form.css";
 
 const Form = () => {
   const navigate = useNavigate();
+  const [showThankYou, setShowThankYou] = useState(false);
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -24,8 +25,7 @@ const Form = () => {
     e.preventDefault();
 
     console.log(formData);
-
-    alert("Form Submitted Successfully");
+    setShowThankYou(true);
   };
 
   return (
@@ -156,6 +156,25 @@ const Form = () => {
           </button>
 
         </form>
+
+        {showThankYou && (
+          <div className="modal-overlay">
+            <div className="thank-you-modal">
+              <h2>Thank you!</h2>
+              <p>Your submission has been received successfully.</p>
+              <button
+                type="button"
+                className="modal-close-btn"
+                onClick={() => {
+                  setShowThankYou(false);
+                  navigate("/");
+                }}
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        )}
 
       </div>
 
