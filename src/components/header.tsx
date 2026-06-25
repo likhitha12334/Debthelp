@@ -1,15 +1,21 @@
-
-import logo from "../assets/logo.jpg";
-
 const Header = () => {
   return (
     <header className="sticky top-0 z-30 border-b border-slate-200 bg-white/95 backdrop-blur-sm shadow-sm">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-6 py-4">
         <div className="flex items-center gap-4">
-          <img src={logo} alt="Debt Help Logo" className="h-14 w-auto rounded-2xl shadow-sm" />
+          <img
+            src="/images/logo.png"
+            alt="Debt Help Logo"
+            className="h-14 w-auto rounded-2xl shadow-sm"
+          />
+
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.24em] text-sky-600">Debt Help</p>
-            <p className="text-sm text-slate-500">Financial Freedom</p>
+            <p className="text-sm font-semibold uppercase tracking-[0.24em] text-sky-600">
+              Debt Help
+            </p>
+            <p className="text-sm text-slate-500">
+              Financial Freedom
+            </p>
           </div>
         </div>
 
@@ -25,3 +31,5 @@ const Header = () => {
 };
 
 export default Header;
+
+
